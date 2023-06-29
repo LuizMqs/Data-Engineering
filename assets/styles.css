@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.title {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.dashboard {
+margin-bottom: 40px;
+}
+
+/* Estilo do gráfico */
+.graph-container {
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 20px;
+}
+
+/* Estilo do cabeçalho do gráfico */
+.graph-header {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+/* Estilo do rodapé do gráfico */
+.graph-footer {
+font-size: 14px;
+color: #888;
+}
+
+/* Estilo das barras do gráfico de barras */
+.bar {
+fill: #1f77b4;
+}
+
+/* Estilo do texto nas barras do gráfico de barras */
+.bar-text {
+fill: #fff;
+font-size: 12px;
+text-anchor: middle;
+}
+
+/* Estilo das fatias do gráfico de pizza */
+.slice {
+fill: #1f77b4;
+}
+
+/* Estilo do texto nas fatias do gráfico de pizza */
+.slice-text {
+fill: #fff;
+font-size: 12px;
+text-anchor: middle;
+}

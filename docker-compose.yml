@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: luiz1235
+      POSTGRES_DB: development
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8"
+    ports:
+      - 5432:5432
+    volumes:
+      - "./database/create_table.sql:/docker-entrypoint-initdb.d/schema.sql"

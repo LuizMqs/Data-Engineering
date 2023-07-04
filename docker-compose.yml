@@ -1,4 +1,8 @@
 version: '3'
+networks:
+  python-app:
+    driver:
+      bridge
 services:
   postgres:
     image: postgres:14
@@ -12,3 +16,17 @@ services:
       - 5432:5432
     volumes:
       - "./database/create_table.sql:/docker-entrypoint-initdb.d/schema.sql"
+  myapp:
+    depends_on:
+      - postgres
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    environment:
+      - DB_NAME=development
+      - DB_USER=postgres
+      - DB_PASS=luiz1235
+      - DB_HOST=postgres
+      - DB_PORT=5432

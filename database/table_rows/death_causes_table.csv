@@ -1,3 +1,4 @@
+id;description
 A000;Cólera devida a Vibrio cholerae 01, biótipo cholerae
 A001;Cólera devida a Vibrio cholerae 01, biótipo El Tor
 A009;Cólera não especificada
@@ -1656,8 +1657,8 @@ D821;Síndrome de Di George
 D822;Imunodeficiência com encurtamento de membros
 D823;Imunodeficiência que se segue à resposta hereditária defeituosa ao vírus de Epstein-Barr (EB)
 D824;Síndrome da hiperimunoglobulina E [IgE]
-D828;Imunodeficiências associadas com outros defeitos "major" especificados
-D829;Imunodeficiência associada com defeitos "major" não especificados
+D828;"Imunodeficiências associadas com outros defeitos ""major"" especificados"
+D829;"Imunodeficiência associada com defeitos ""major"" não especificados"
 D830;Imunodeficiência comum variável com predominância de anormalidades do número e da função das células B
 D831;Imunodeficiência comum variável com predominância de transtornos imunorregulatórios de células T
 D832;Imunodeficiência comum variável com auto-anticorpos às células B ou T
@@ -1705,7 +1706,7 @@ E051;Tireotoxicose com bócio tóxico uninodular
 E052;Tireotoxicose com bócio tóxico multinodular
 E053;Tireotoxicose causada por tecido tireoidiano ectópico
 E054;Tireotoxicose factícia
-E055;Crise ou "tempestade" tireotóxica
+E055;"Crise ou ""tempestade"" tireotóxica"
 E058;Outras tireotoxicoses
 E059;Tireotoxicose não especificada
 E060;Tireoidite aguda
@@ -2250,11 +2251,11 @@ F421;Transtorno obsessivo-compulsivo com predominância de comportamentos compul
 F422;Transtorno obsessivo-compulsivo, forma mista, com idéias obsessivas e comportamentos compulsivos
 F428;Outros transtornos obsessivo-compulsivos
 F429;Transtorno obsessivo-compulsivo não especificado
-F430;Reação aguda ao "stress"
-F431;Estado de "stress" pós-traumático
+F430;"Reação aguda ao ""stress"""
+F431;"Estado de ""stress"" pós-traumático"
 F432;Transtornos de adaptação
-F438;Outras reações ao "stress" grave
-F439;Reação não especificada a um "stress" grave
+F438;"Outras reações ao ""stress"" grave"
+F439;"Reação não especificada a um ""stress"" grave"
 F440;Amnésia dissociativa
 F441;Fuga dissociativa
 F442;Estupor dissociativo
@@ -2563,7 +2564,7 @@ G432;Estado de mal enxaquecoso
 G433;Enxaqueca complicada
 G438;Outras formas de enxaqueca
 G439;Enxaqueca, sem especificação
-G440;Síndrome de "cluster-headache"
+G440;"Síndrome de ""cluster-headache"""
 G441;Cefaléia vascular, não classificada em outra parte
 G442;Cefaléia tensional
 G443;Cefaléia crônica pós-traumática
@@ -4963,7 +4964,7 @@ M839;Osteomalácia não especificada do adulto
 M840;Defeito de consolidação da fratura
 M841;Ausência de consolidação da fratura [pseudo-artrose]
 M842;Atraso de consolidação de fratura
-M843;Fratura de fadiga ("stress") não classificada em outra parte
+M843;"Fratura de fadiga (""stress"") não classificada em outra parte"
 M844;Fratura patológica não classificada em outra parte
 M848;Outros transtornos da continuidade do osso
 M849;Transtorno não especificado da continuidade do osso
@@ -5006,7 +5007,7 @@ M899;Transtorno não especificado do osso
 M900;Tuberculose óssea
 M901;Periostite em outras doenças infecciosas classificadas em outra parte
 M902;Osteopatia em outras doenças infecciosas classificadas em outra parte
-M903;Osteonecrose em "mal dos caixões"
+M903;"Osteonecrose em ""mal dos caixões"""
 M904;Osteonecrose devida à hemoglobinopatia
 M905;Osteonecrose em outras doenças classificadas em outra parte
 M906;Osteíte deformante em doenças neoplásicas
@@ -5260,7 +5261,7 @@ N378;Outros transtornos da uretra em doenças classificadas em outra parte
 N390;Infecção do trato urinário de localização não especificada
 N391;Proteinúria persistente não especificada
 N392;Proteinúria ortostática não especificada
-N393;Incontinência de tensão ("stress")
+N393;"Incontinência de tensão (""stress"")"
 N394;Outras incontinências urinárias especificadas
 N398;Outros transtornos especificados do aparelho urinário
 N399;Transtornos não especificados do aparelho urinário
@@ -5631,14 +5632,14 @@ O266;Transtornos do fígado na gravidez, no parto e no puerpério
 O267;Subluxação da sínfise (púbica) na gravidez, parto e puerpério
 O268;Outras afecções especificadas, ligadas a gravidez
 O269;Afecções ligadas a gravidez, não especificadas
-O280;Achados hematológicos anormais do rastreamento ["screening"] antenatal da mãe
-O281;Achados bioquímicos anormais do rastreamento ["screening"] antenatal da mãe
-O282;Achados citológicos anormais do rastreamento ["screening"] antenatal da mãe
-O283;Achados ultrassonográficos anormais do rastreamento ["screening"] antenatal da mãe
-O284;Achados radiológicos anormais do rastreamento ["screening"] antenatal da mãe
-O285;Achados cromossômicos e genéticos anormais do rastreamento ["screening"] antenatal da mãe
-O288;Outros achados anormais do rastreamento ["screening"] antenatal da mãe
-O289;Achados anormais do rastreamento ["screening"] antenatal da mãe, não especificados
+O280;"Achados hematológicos anormais do rastreamento [""screening""] antenatal da mãe"
+O281;"Achados bioquímicos anormais do rastreamento [""screening""] antenatal da mãe"
+O282;"Achados citológicos anormais do rastreamento [""screening""] antenatal da mãe"
+O283;"Achados ultrassonográficos anormais do rastreamento [""screening""] antenatal da mãe"
+O284;"Achados radiológicos anormais do rastreamento [""screening""] antenatal da mãe"
+O285;"Achados cromossômicos e genéticos anormais do rastreamento [""screening""] antenatal da mãe"
+O288;"Outros achados anormais do rastreamento [""screening""] antenatal da mãe"
+O289;"Achados anormais do rastreamento [""screening""] antenatal da mãe, não especificados"
 O290;Complicações pulmonares de anestesia administrada durante a gravidez
 O291;Complicações cardíacas de anestesia administrada durante a gravidez
 O292;Complicações relativas ao sistema nervoso central devidas a anestesia administrada durante a gravidez
@@ -6202,7 +6203,7 @@ P745;Tirosinemia transitória do recém-nascido
 P748;Outros distúrbios metabólicos transitórios do recém-nascido
 P749;Distúrbio metabólico transitório não especificado do recém-nascido
 P75;Íleo meconial
-P760;Síndrome da "rolha de mecônio"
+P760;"Síndrome da ""rolha de mecônio"""
 P761;Íleo transitório do recém-nascido
 P762;Obstrução intestinal devido a leite espesso
 P768;Outras obstruções intestinais especificadas do recém-nascido
@@ -6750,7 +6751,7 @@ Q790;Hérnia diafragmática congênita
 Q791;Outras malformações congênitas do diafragma
 Q792;Exonfalia
 Q793;Gastrosquise
-Q794;Síndrome do abdome em ameixa seca ("prune belly syndrome")
+Q794;"Síndrome do abdome em ameixa seca (""prune belly syndrome"")"
 Q795;Outras malformações congênitas da parede abdominal
 Q796;Síndrome de Ehlers-Danlos
 Q798;Outras malformações congênitas do sistema osteomuscular
@@ -7022,7 +7023,7 @@ R462;Comportamento estranho e inexplicável
 R463;Hiperatividade
 R464;Lentidão e baixa reatividade
 R465;Personalidade suspeita e evasiva
-R466;Inquietação e preocupação exageradas com acontecimentos "estressantes"
+R466;"Inquietação e preocupação exageradas com acontecimentos ""estressantes"""
 R467;Verborragia e pormenores circunstanciais mascarando o motivo da consulta
 R468;Outros sintomas e sinais relativos à aparência e ao comportamento
 R470;Disfasia e afasia
@@ -8496,9 +8497,9 @@ V019;Pedestre traumatizado em colisão com um veículo a pedal - acidente não e
 V020;Pedestre traumatizado em colisão com um veículo a motor de duas ou três rodas - acidente não-de-trânsito
 V021;Pedestre traumatizado em colisão com um veículo a motor de duas ou três rodas - acidente de trânsito
 V029;Pedestre traumatizado em colisão com um veículo a motor de duas ou três rodas - acidente não especificado se de trânsito ou não de trânsito
-V030;Pedestre traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - acidente não-de-trânsito
-V031;Pedestre traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - acidente de trânsito
-V039;Pedestre traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - acidente não especificado se de trânsito ou não de trânsito
+V030;"Pedestre traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - acidente não-de-trânsito"
+V031;"Pedestre traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - acidente de trânsito"
+V039;"Pedestre traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - acidente não especificado se de trânsito ou não de trânsito"
 V040;Pedestre traumatizado em colisão com um veículo de transporte pesado ou com um ônibus - acidente não-de-trânsito
 V041;Pedestre traumatizado em colisão com um veículo de transporte pesado ou com um ônibus - acidente de trânsito
 V049;Pedestre traumatizado em colisão com um veículo de transporte pesado ou com um ônibus - acidente não especificado se de trânsito ou não de trânsito
@@ -8534,13 +8535,13 @@ V123;Ciclista traumatizado em colisão com um veículo a motor de duas ou três 
 V124;Ciclista traumatizado em colisão com um veículo a motor de duas ou três rodas - condutor traumatizado em um acidente de trânsito
 V125;Ciclista traumatizado em colisão com um veículo a motor de duas ou três rodas - passageiro traumatizado em um acidente de trânsito
 V129;Ciclista traumatizado em colisão com um veículo a motor de duas ou três rodas - ciclista não especificado traumatizado em um acidente de trânsito
-V130;Ciclista traumatizado em colisão com um automóvel, "pick up" ou caminhonete - condutor traumatizado em acidente não-de-trânsito
-V131;Ciclista traumatizado em colisão com um automóvel, "pick up" ou caminhonete - passageiro traumatizado em acidente não-de-trânsito
-V132;Ciclista traumatizado em colisão com um automóvel, "pick up" ou caminhonete - ciclista não especificado traumatizado em acidente não-de-trânsito
-V133;Ciclista traumatizado em colisão com um automóvel, "pick up" ou caminhonete - pessoa traumatizada ao subir ou descer do veículo
-V134;Ciclista traumatizado em colisão com um automóvel, "pick up" ou caminhonete - condutor traumatizado em um acidente de trânsito
-V135;Ciclista traumatizado em colisão com um automóvel, "pick up" ou caminhonete - passageiro traumatizado em um acidente de trânsito
-V139;Ciclista traumatizado em colisão com um automóvel, "pick up" ou caminhonete - ciclista não especificado traumatizado em um acidente de trânsito
+V130;"Ciclista traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - condutor traumatizado em acidente não-de-trânsito"
+V131;"Ciclista traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - passageiro traumatizado em acidente não-de-trânsito"
+V132;"Ciclista traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - ciclista não especificado traumatizado em acidente não-de-trânsito"
+V133;"Ciclista traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - pessoa traumatizada ao subir ou descer do veículo"
+V134;"Ciclista traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - condutor traumatizado em um acidente de trânsito"
+V135;"Ciclista traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - passageiro traumatizado em um acidente de trânsito"
+V139;"Ciclista traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - ciclista não especificado traumatizado em um acidente de trânsito"
 V140;Ciclista traumatizado em colisão com um veículo de transporte pesado ou um ônibus - condutor traumatizado em acidente não-de-trânsito
 V141;Ciclista traumatizado em colisão com um veículo de transporte pesado ou um ônibus - passageiro traumatizado em acidente não-de-trânsito
 V142;Ciclista traumatizado em colisão com um veículo de transporte pesado ou um ônibus - ciclista não especificado traumatizado em acidente não-de-trânsito
@@ -8606,13 +8607,13 @@ V223;Motociclista traumatizado em colisão com um veículo a motor de duas ou tr
 V224;Motociclista traumatizado em colisão com um veículo a motor de duas ou três rodas - condutor traumatizado em um acidente de trânsito
 V225;Motociclista traumatizado em colisão com um veículo a motor de duas ou três rodas - passageiro traumatizado em um acidente de trânsito
 V229;Motociclista traumatizado em colisão com um veículo a motor de duas ou três rodas - motociclista não especificado traumatizado em um acidente de trânsito
-V230;Motociclista traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - condutor traumatizado em acidente não-de-trânsito
-V231;Motociclista traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - passageiro traumatizado em acidente não-de-trânsito
-V232;Motociclista traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - motociclista não especificado traumatizado em acidente não-de-trânsito
-V233;Motociclista traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - pessoa traumatizado ao subir ou descer do veículo
-V234;Motociclista traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - condutor traumatizado em um acidente de trânsito
-V235;Motociclista traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - passageiro traumatizado em um acidente de trânsito
-V239;Motociclista traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - motociclista não especificado traumatizado em um acidente de trânsito
+V230;"Motociclista traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - condutor traumatizado em acidente não-de-trânsito"
+V231;"Motociclista traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - passageiro traumatizado em acidente não-de-trânsito"
+V232;"Motociclista traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - motociclista não especificado traumatizado em acidente não-de-trânsito"
+V233;"Motociclista traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - pessoa traumatizado ao subir ou descer do veículo"
+V234;"Motociclista traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - condutor traumatizado em um acidente de trânsito"
+V235;"Motociclista traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - passageiro traumatizado em um acidente de trânsito"
+V239;"Motociclista traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - motociclista não especificado traumatizado em um acidente de trânsito"
 V240;Motociclista traumatizado em colisão com um veículo de transporte pesado ou um ônibus - condutor traumatizado em acidente não-de-trânsito
 V241;Motociclista traumatizado em colisão com um veículo de transporte pesado ou um ônibus - passageiro traumatizado em acidente não-de-trânsito
 V242;Motociclista traumatizado em colisão com um veículo de transporte pesado ou um ônibus - motociclista não especificado traumatizado em acidente não-de-trânsito
@@ -8684,15 +8685,15 @@ V325;Ocupante de um triciclo motorizado traumatizado em colisão com outro veíc
 V326;Ocupante de um triciclo motorizado traumatizado em colisão com outro veículo a motor de duas ou três rodas - passageiro traumatizado em um acidente de trânsito
 V327;Ocupante de um triciclo motorizado traumatizado em colisão com outro veículo a motor de duas ou três rodas - pessoa viajando no exterior do veículo traumatizada em um acidente de trânsito
 V329;Ocupante de um triciclo motorizado traumatizado em colisão com outro veículo a motor de duas ou três rodas - ocupante não especificado de um triciclo motorizado traumatizado em um acidente de trânsito
-V330;Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, "pick up" ou caminhonete - condutor traumatizado em acidente não-de-trânsito
-V331;Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, "pick up" ou caminhonete - passageiro traumatizado em acidente não-de-trânsito
-V332;Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, "pick up" ou caminhonete - pessoa viajando no exterior do veículo traumatizada em um acidente não-de-trânsito
-V333;Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, "pick up" ou caminhonete - ocupante não especificado de um triciclo motorizado traumatizado em acidente não-de-trânsito
-V334;Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, "pick up" ou caminhonete - pessoa traumatizada ao subir ou descer do veículo
-V335;Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, "pick up" ou caminhonete - condutor traumatizado em um acidente de trânsito
-V336;Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, "pick up" ou caminhonete - passageiro traumatizado em um acidente de trânsito
-V337;Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, "pick up" ou caminhonete - pessoa viajando no exterior do veículo traumatizada em um acidente de trânsito
-V339;Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, "pick up" ou caminhonete - ocupante não especificado de um triciclo motorizado traumatizado em um acidente de trânsito
+V330;"Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - condutor traumatizado em acidente não-de-trânsito"
+V331;"Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - passageiro traumatizado em acidente não-de-trânsito"
+V332;"Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - pessoa viajando no exterior do veículo traumatizada em um acidente não-de-trânsito"
+V333;"Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - ocupante não especificado de um triciclo motorizado traumatizado em acidente não-de-trânsito"
+V334;"Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - pessoa traumatizada ao subir ou descer do veículo"
+V335;"Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - condutor traumatizado em um acidente de trânsito"
+V336;"Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - passageiro traumatizado em um acidente de trânsito"
+V337;"Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - pessoa viajando no exterior do veículo traumatizada em um acidente de trânsito"
+V339;"Ocupante de um triciclo motorizado traumatizado em colisão com um automóvel, ""pick up"" ou caminhonete - ocupante não especificado de um triciclo motorizado traumatizado em um acidente de trânsito"
 V340;Ocupante de um triciclo motorizado traumatizado em colisão com um veículo de transporte pesado ou um ônibus - condutor traumatizado em acidente não-de-trânsito
 V341;Ocupante de um triciclo motorizado traumatizado em colisão com um veículo de transporte pesado ou um ônibus - passageiro traumatizado em acidente não-de-trânsito
 V342;Ocupante de um triciclo motorizado traumatizado em colisão com um veículo de transporte pesado ou um ônibus - pessoa viajando no exterior do veículo traumatizada em um acidente não-de-trânsito
@@ -8774,15 +8775,15 @@ V425;Ocupante de um automóvel [carro] traumatizado em colisão com outro veícu
 V426;Ocupante de um automóvel [carro] traumatizado em colisão com outro veículo a motor de duas ou três rodas - passageiro traumatizado em um acidente de trânsito
 V427;Ocupante de um automóvel [carro] traumatizado em colisão com outro veículo a motor de duas ou três rodas - pessoa viajando no exterior do veículo traumatizada em um acidente de trânsito
 V429;Ocupante de um automóvel [carro] traumatizado em colisão com outro veículo a motor de duas ou três rodas - ocupante não especificado de um automóvel [carro] traumatizado em um acidente de trânsito
-V430;Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - condutor [motorista] traumatizado em um acidente não-de-trânsito
-V431;Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - passageiro traumatizado em um acidente não-de-trânsito
-V432;Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - pessoa viajando no exterior do veículo traumatizada em um acidente não-de-trânsito
-V433;Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - ocupante não especificado de um automóvel [carro] traumatizado em um acidente não-de-trânsito
-V434;Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - pessoa traumatizada ao subir ou descer do veículo
-V435;Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - condutor [motorista] traumatizado em um acidente de trânsito
-V436;Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - passageiro traumatizado em um acidente de trânsito
-V437;Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - pessoa viajando no exterior do veículo traumatizada em um acidente de trânsito
-V439;Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], "pick up" ou caminhonete - ocupante não especificado de um automóvel [carro] traumatizado em um acidente de trânsito
+V430;"Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - condutor [motorista] traumatizado em um acidente não-de-trânsito"
+V431;"Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - passageiro traumatizado em um acidente não-de-trânsito"
+V432;"Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - pessoa viajando no exterior do veículo traumatizada em um acidente não-de-trânsito"
+V433;"Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - ocupante não especificado de um automóvel [carro] traumatizado em um acidente não-de-trânsito"
+V434;"Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - pessoa traumatizada ao subir ou descer do veículo"
+V435;"Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - condutor [motorista] traumatizado em um acidente de trânsito"
+V436;"Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - passageiro traumatizado em um acidente de trânsito"
+V437;"Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - pessoa viajando no exterior do veículo traumatizada em um acidente de trânsito"
+V439;"Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], ""pick up"" ou caminhonete - ocupante não especificado de um automóvel [carro] traumatizado em um acidente de trânsito"
 V440;Ocupante de um automóvel [carro] traumatizado em colisão com um veículo de transporte pesado ou um ônibus - condutor [motorista] traumatizado em um acidente não-de-trânsito
 V441;Ocupante de um automóvel [carro] traumatizado em colisão com um veículo de transporte pesado ou um ônibus - passageiro traumatizado em um acidente não-de-trânsito
 V442;Ocupante de um automóvel [carro] traumatizado em colisão com um veículo de transporte pesado ou um ônibus - pessoa viajando no exterior do veículo traumatizada em um acidente não-de-trânsito
@@ -9357,16 +9358,16 @@ W086;Queda de outro tipo de mobília - áreas industriais e em construção
 W087;Queda de outro tipo de mobília - fazenda
 W088;Queda de outro tipo de mobília - outros locais especificados
 W089;Queda de outro tipo de mobília - local não especificado
-W090;Queda envolvendo equipamento de "playground" - residência
-W091;Queda envolvendo equipamento de "playground" - habitação coletiva
-W092;Queda envolvendo equipamento de "playground" - escolas, outras instituições e áreas de administração pública
-W093;Queda envolvendo equipamento de "playground" - área para a prática de esportes e atletismo
-W094;Queda envolvendo equipamento de "playground" - rua e estrada
-W095;Queda envolvendo equipamento de "playground" - áreas de comércio e de serviços
-W096;Queda envolvendo equipamento de "playground" - áreas industriais e em construção
-W097;Queda envolvendo equipamento de "playground" - fazenda
-W098;Queda envolvendo equipamento de "playground" - outros locais especificados
-W099;Queda envolvendo equipamento de "playground" - local não especificado
+W090;"Queda envolvendo equipamento de ""playground"" - residência"
+W091;"Queda envolvendo equipamento de ""playground"" - habitação coletiva"
+W092;"Queda envolvendo equipamento de ""playground"" - escolas, outras instituições e áreas de administração pública"
+W093;"Queda envolvendo equipamento de ""playground"" - área para a prática de esportes e atletismo"
+W094;"Queda envolvendo equipamento de ""playground"" - rua e estrada"
+W095;"Queda envolvendo equipamento de ""playground"" - áreas de comércio e de serviços"
+W096;"Queda envolvendo equipamento de ""playground"" - áreas industriais e em construção"
+W097;"Queda envolvendo equipamento de ""playground"" - fazenda"
+W098;"Queda envolvendo equipamento de ""playground"" - outros locais especificados"
+W099;"Queda envolvendo equipamento de ""playground"" - local não especificado"
 W100;Queda em ou de escadas ou degraus - residência
 W101;Queda em ou de escadas ou degraus - habitação coletiva
 W102;Queda em ou de escadas ou degraus - escolas, outras instituições e áreas de administração pública
@@ -11761,7 +11762,7 @@ Y823;Outros dispositivos (aparelhos) associados a incidentes adversos e os não 
 Y828;Outros dispositivos (aparelhos) associados a incidentes adversos e os não especificados - dispositivos (aparelhos) diversos, inclusive combinações, não classificada em outra parte
 Y830;Reação anormal em paciente ou complicação tardia, causadas por intervenção cirúrgica com transplante de todo o órgão, sem menção de acidente durante a intervenção
 Y831;Reação anormal em paciente ou complicação tardia, causadas por intervenção cirúrgica com implante de uma prótese interna, sem menção de acidente durante a intervenção
-Y832;Reação anormal em paciente ou complicação tardia, causadas por intervenção cirúrgica com anastomose, derivação ("bypass") ou enxerto, sem menção de acidente durante a intervenção
+Y832;"Reação anormal em paciente ou complicação tardia, causadas por intervenção cirúrgica com anastomose, derivação (""bypass"") ou enxerto, sem menção de acidente durante a intervenção"
 Y833;Reação anormal em paciente ou complicação tardia, causadas por intervenção cirúrgica com formação de estoma externo, sem menção de acidente durante a intervenção
 Y834;Reação anormal em paciente ou complicação tardia, causadas por outras cirurgias reparadoras, sem menção de acidente durante a intervenção
 Y835;Reação anormal em paciente ou complicação tardia, causadas por amputação de membro(s), sem menção de acidente durante a intervenção
@@ -11972,7 +11973,7 @@ Z308;Outro procedimento anticoncepcional
 Z309;Procedimento anticoncepcional não especificado
 Z310;Tuboplastia ou vasoplastia após esterilização prévia
 Z311;Inseminação artificial
-Z312;Fecundação "in vitro"
+Z312;"Fecundação ""in vitro"""
 Z313;Outros métodos assistidos de fertilização
 Z314;Investigação e testes com relação à procriação
 Z315;Aconselhamento genético
@@ -12405,7 +12406,7 @@ Z947;Córnea transplantada
 Z948;Outros órgãos e tecidos transplantados
 Z949;Órgão e tecido não especificado transplantado
 Z950;Presença de marca-passo cardíaco
-Z951;Presença de enxerto de ponte ["bypass"] aortocoronária
+Z951;"Presença de enxerto de ponte [""bypass""] aortocoronária"
 Z952;Presença de prótese de válvula cardíaca
 Z953;Presença de valva cardíaca xenógena
 Z954;Presença de outras substituições valvares cardíacas

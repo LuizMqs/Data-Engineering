@@ -209,7 +209,7 @@ renamed_columns = {
     'ano_referencia': 'reference_year',
     'idh_feminino': 'female_idh',
     'idh_masculino': 'male_idh',
-    'expectativa_de_vida': 'Life_expectancy',
+    'expectativa_de_vida': 'life_expectancy',
     'expectativa_de_vida_feminina': 'female_life_expectancy',
     'expectativa_de_vida_masculina': 'male_life_expectancy',
 }

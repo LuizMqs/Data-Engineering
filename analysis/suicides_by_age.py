@@ -22,7 +22,7 @@ try:
 
     cur.execute(""" SELECT gender, age, death_cause
                     FROM suicides
-                    WHERE death_cause >= 'X600' AND death_cause <= 'X840'
+                    WHERE death_cause >= 'X600' AND death_cause <= 'X849'
                     ORDER BY age DESC;""")
     
     rows = cur.fetchall()

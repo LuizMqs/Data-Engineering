@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import random
 
+# suicides_table
 data_path = 'database/raw_data/suicidios_2010_a_2019.csv'
 
 df = pd.read_csv(data_path)
@@ -114,6 +115,8 @@ df.to_csv(clean_data_path, index=False)
 
 print(f"Cleaned data saved to {clean_data_path}")
 
+
+# death_causes_table
 # Path to the CSV file
 data_path = 'database/raw_data/CID-10-SUBCATEGORIAS.csv'
 
@@ -147,3 +150,80 @@ try:
     print("CSV file saved successfully.")
 except FileNotFoundError:
     print("Error: CSV file was not saved.")
+
+
+# states_table
+data_path = 'database/raw_data/suicidios_por_estados_por_ano.csv'
+
+# Read the CSV file
+df = pd.read_csv(data_path)
+
+# Check for null values
+if df.isnull().values.any():
+    print("Warning: Null values exist in the DataFrame.")
+
+# Remove the first column
+df.drop(df.columns[0], axis=1, inplace=True)
+
+# Rename columns to match our database
+renamed_columns = {
+    'abrev_estado': 'state_abbreviation',
+    'estado': 'state',
+    'regiao': 'region',
+    'ano': 'year',
+    'n': 'number_of_deaths',
+}
+df.rename(columns=renamed_columns, inplace=True)
+
+# Path for the output CSV file
+output_path = 'database/table_rows/states_table.csv'
+
+# Save the DataFrame to a clean CSV file
+df.to_csv(output_path, index=False)
+
+# Check if the file was successfully saved
+try:
+    pd.read_csv(output_path)
+    print("Cleaned CSV file was saved successfully.")
+except FileNotFoundError:
+    print("Error: The CSV file was not saved.")
+
+
+# idh_table
+data_path = 'database/raw_data/idh.csv'
+
+# Read the CSV file
+df = pd.read_csv(data_path)
+
+# Keep data starting from 2010
+df = df[df['ano_referencia'] >= 2010]
+
+# Check if the columns exist before removing them
+columns_to_drop = ['expectativa_de_anos_escola',
+                   'expectativa_de_anos_escola_feminina', 'expectativa_de_anos_escola_masculina']
+existing_columns = df.columns.intersection(columns_to_drop)
+df.drop(columns=existing_columns, inplace=True)
+
+# Rename columns to match our database
+renamed_columns = {
+    'ano_referencia': 'reference_year',
+    'idh_feminino': 'female_idh',
+    'idh_masculino': 'male_idh',
+    'expectativa_de_vida': 'Life_expectancy',
+    'expectativa_de_vida_feminina': 'female_life_expectancy',
+    'expectativa_de_vida_masculina': 'male_life_expectancy',
+}
+df.rename(columns=renamed_columns, inplace=True)
+
+# Path for the output CSV file
+output_path = 'database/table_rows/idh_table.csv'
+
+# Save the DataFrame to a clean CSV file
+df.to_csv(output_path, index=False)
+
+# Check if the file was successfully saved
+try:
+    pd.read_csv(output_path)
+    print("Cleaned CSV file was saved successfully.")
+except FileNotFoundError:
+    print("Error: The CSV file was not saved.")

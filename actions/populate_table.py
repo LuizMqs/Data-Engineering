@@ -30,6 +30,14 @@ try:
         next(f)
         cur.copy_from(f, 'macro_regions_populations', sep=',', columns=('macro_region', 'total_population_2010', 'total_population_2011', 'total_population_2012', 'total_population_2013', 'total_population_2014', 'total_population_2015', 'total_population_2016', 'total_population_2017', 'total_population_2018', 'total_population_2019', 'total_population_2020', 'total_population_2021', 'total_population_2022'))
 
+    with open('database/table_rows/idh_table.csv', 'r', encoding='utf8') as f:
+        next(f)
+        cur.copy_from(f, 'idh', sep=',', columns=('reference_year', 'idh', 'female_idh', 'male_idh', 'life_expectancy', 'female_life_expectancy', 'male_life_expectancy'))
+
+    with open('database/table_rows/states_table.csv', 'r', encoding='utf8') as f:
+        next(f)
+        cur.copy_from(f, 'states', sep=',', columns=('state_abbreviation', 'state', 'region', 'year', 'number_of_deaths'))
+
     print("Data imported successfully")
     
 

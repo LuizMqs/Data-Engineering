@@ -7,10 +7,14 @@ import numpy as np
 from analysis.suicides_by_year import df_merge_pop_total_suicides_total
 from analysis.suicides_by_gender import df_number_of_suicides_by_gender, df_variation_of_suicides_by_gender_between_2010_and_2019
 from analysis.suicides_by_race import df_number_of_suicides_by_race, df_number_of_suicides_by_race_between_2016_and_2019
+from analysis.suicides_by_cause_of_death import df_death_cause_description_and_amount
+from analysis.suicides_and_idh import df_idh_and_suicide_rate
+from analysis.suicides_by_macro_region_and_year import df_suicides_by_year_and_macro_regions_formated
 
 df_total_suicides_total = df_merge_pop_total_suicides_total
 df_variation_of_suicides_by_gender = df_variation_of_suicides_by_gender_between_2010_and_2019
 df_number_of_suicides_by_race_between = df_number_of_suicides_by_race_between_2016_and_2019
+df_death_cause_description = df_death_cause_description_and_amount
 
 app = Dash(__name__)
 
@@ -24,10 +28,12 @@ app.layout = html.Div(
         dcc.RadioItems(
             id='btnRadio',
             options=[
-                {'label': 'Ano', 'value': 'ano'},
+                {'label': 'Taxa', 'value': 'ano'},
                 {'label': 'Gênero', 'value': 'genero'},
                 {'label': 'Raça', 'value': 'raca'},
-                {'label': 'Macrorregião', 'value': 'macrorregiao'},
+                {'label': 'Causas', 'value': 'causas'},
+                {'label': 'IDH', 'value': 'idh'},
+                {'label': 'Macrorregião', 'value': 'macrorregiao'} 
             ],
             value='ano',
             className='buttonsRadio',
@@ -66,17 +72,17 @@ def updateGraph(selected_value):
         
         fig_scatter.add_trace(go.Scatter(
             x=df_variation_of_suicides_by_gender['year'],
-            y=df_variation_of_suicides_by_gender['Variation_Male'],
+            y=df_variation_of_suicides_by_gender['Masculino'],
             name="Masculino"
         ))
         
         fig_scatter.add_trace(go.Scatter(
             x=df_variation_of_suicides_by_gender['year'],
-            y=df_variation_of_suicides_by_gender['Variation_Female'],
+            y=df_variation_of_suicides_by_gender['Feminino'],
             name="Feminino"
         ))
         
-        fig_scatter.update_layout(title="Taxa de dispersao entre os generos", xaxis_title="Anos", yaxis_title="Dispersao", legend_orientation='h', legend_valign="bottom",legend_title_text="Legenda", legend_title_side="top", legend = {"yanchor": "bottom", "y": -0.35})
+        fig_scatter.update_layout(title="Taxa de Suicídios entre os gêneros", xaxis_title="Anos", yaxis_title="Suicídios", legend_orientation='h', legend_valign="bottom",legend_title_text="Legenda", legend_title_side="top", legend = {"yanchor": "bottom", "y": -0.35})
         
         figures = [
             dcc.Graph(figure=fig_scatter),
@@ -124,16 +130,63 @@ def updateGraph(selected_value):
             name='Preta'
         ))
         
-        fig_scatter.update_layout(title="Taxa de dispersao entre os generos", xaxis_title="Anos", yaxis_title="Dispersao", legend_orientation='h', legend_valign="bottom",legend_title_text="Legenda", legend_title_side="top", legend = {"yanchor": "bottom", "y": -0.35})
+        fig_scatter.update_layout(title="Taxa de Suícidio por Raça", xaxis_title="Anos", yaxis_title="Suicídios", legend_orientation='h', legend_valign="bottom",legend_title_text="Legenda", legend_title_side="top", legend = {"yanchor": "bottom", "y": -0.5})
         
         figures = [
             dcc.Graph(figure=fig_scatter),
             dcc.Graph(figure=fig_pie)
         ]
         
-    #elif selected_value == 'macrorregiao':
+    elif selected_value =='idh': 
         
-        #figures = figure=fig_scatter
+        fig_scatter = go.Figure()
+        
+        fig_scatter.add_trace(go.Scatter(
+            x=df_idh_and_suicide_rate['year'],
+            y=df_idh_and_suicide_rate['idh'],
+            name='Índice de Desenvolvimento Humano'
+        ))
+        
+        fig_scatter.add_trace(go.Scatter(
+            x=df_idh_and_suicide_rate['year'],
+            y=df_idh_and_suicide_rate['suicide_rate'],
+            name='Taxa de suicídio'
+        ))
+        
+        fig_scatter.update_layout(title="Índice de Desenvolvimento Humano - IDH", xaxis_title="Anos", yaxis_title="Suicídios", legend_orientation='h', legend_valign="bottom",legend_title_text="Legenda", legend_title_side="top", legend = {"yanchor": "bottom", "y": -0.5})
+        
+        figures = dcc.Graph(figure=fig_scatter)
+        
+    elif selected_value == 'macrorregiao': #df_suicides_by_year_and_macro_regions_formated
+        
+        fig_scatter = go.Figure()
+        
+        fig_scatter.add_trace(go.Scatter(
+            x=df_suicides_by_year_and_macro_regions_formated['year'],
+            y=df_suicides_by_year_and_macro_regions_formated['total_deaths'],
+            name='Índice de Desenvolvimento Humano'
+        ))
+        
+        fig_scatter.add_trace(go.Scatter(
+            x=df_suicides_by_year_and_macro_regions_formated['year'],
+            y=df_suicides_by_year_and_macro_regions_formated['suicide_rate'],
+            name='Taxa de suicídio'
+        ))
+        
+        fig_scatter.update_layout(title="Índice de Desenvolvimento Humano - IDH", xaxis_title="Anos", yaxis_title="suicide_rate", legend_orientation='h', legend_valign="bottom",legend_title_text="Legenda", legend_title_side="top", legend = {"yanchor": "bottom", "y": -0.5})
+        
+        figures = dcc.Graph(figure=fig_scatter)
+        
+    elif selected_value == 'causas':
+        fig_bar = px.bar(
+            df_death_cause_description.head(5), 
+            x='id', 
+            y='quantity', 
+            hover_data=['description'],
+            title='Causas da morte',
+            labels={'id': 'Causas - CID', 'quantity': 'Quantidade de suicídos por', 'description': 'Motivo'}
+            )
+        figures = dcc.Graph(figure=fig_bar)
         
     else: 
         figures = dcc.Graph(

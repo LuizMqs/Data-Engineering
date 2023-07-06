@@ -36,14 +36,14 @@ try:
     print(df_number_of_suicides_by_gender)
 
     df_number_of_suicides_by_gender_between_2010_and_2019 = df_total_suicides_by_gender_and_year.groupby(['year', 'gender']).size().unstack().reset_index()
-   
+    
     print(df_number_of_suicides_by_gender_between_2010_and_2019)
 
     df_variation_of_suicides_by_gender_between_2010_and_2019 = df_number_of_suicides_by_gender_between_2010_and_2019.copy()
 
-    df_variation_of_suicides_by_gender_between_2010_and_2019['Variation_Male'] = df_number_of_suicides_by_gender_between_2010_and_2019['Masculino'].pct_change().mul(100).round(2)
+    df_variation_of_suicides_by_gender_between_2010_and_2019['Variation_Male'] = df_number_of_suicides_by_gender_between_2010_and_2019['Masculino'].pct_change().mul(100).round(2).fillna(0)
     
-    df_variation_of_suicides_by_gender_between_2010_and_2019['Variation_Female'] = df_number_of_suicides_by_gender_between_2010_and_2019['Feminino'].pct_change().mul(100).round(2)
+    df_variation_of_suicides_by_gender_between_2010_and_2019['Variation_Female'] = df_number_of_suicides_by_gender_between_2010_and_2019['Feminino'].pct_change().mul(100).round(2).fillna(0)
 
     print(df_variation_of_suicides_by_gender_between_2010_and_2019)
 

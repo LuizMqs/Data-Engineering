@@ -159,23 +159,26 @@ def updateGraph(selected_value):
         
     elif selected_value == 'macrorregiao': #df_suicides_by_year_and_macro_regions_formated
         
-        fig_scatter = go.Figure()
+        fig_scatter = px.line(
+            df_suicides_by_year_and_macro_regions_formated,
+            x='year',
+            y='total_deaths',
+            color='region',
+            markers=True
+        )        
+        fig_scatter.update_layout(title="Número de Mortes por Região ao longo dos anos", xaxis_title="Anos", yaxis_title="Total de mortes", legend_orientation='h', legend_valign="bottom",legend_title_text="Legenda", legend_title_side="top", legend = {"yanchor": "bottom", "y": -0.4})
         
-        fig_scatter.add_trace(go.Scatter(
-            x=df_suicides_by_year_and_macro_regions_formated['year'],
-            y=df_suicides_by_year_and_macro_regions_formated['total_deaths'],
-            name='Índice de Desenvolvimento Humano'
-        ))
+        fig_scatter2 = px.line(
+            df_suicides_by_year_and_macro_regions_formated,
+            x='year',
+            y='suicide_rate',
+            color='region',
+            markers=True
+        )
+        fig_scatter2.update_layout(title="Taxa de Suicídio por Região ao longo dos anos", xaxis_title="Anos", yaxis_title="Taxa de suicídios", legend_orientation='h', legend_valign="bottom",legend_title_text="Legenda", legend_title_side="top", legend = {"yanchor": "bottom", "y": -0.4})
         
-        fig_scatter.add_trace(go.Scatter(
-            x=df_suicides_by_year_and_macro_regions_formated['year'],
-            y=df_suicides_by_year_and_macro_regions_formated['suicide_rate'],
-            name='Taxa de suicídio'
-        ))
+        figures = [dcc.Graph(figure=fig_scatter),dcc.Graph(figure=fig_scatter2)]
         
-        fig_scatter.update_layout(title="Índice de Desenvolvimento Humano - IDH", xaxis_title="Anos", yaxis_title="suicide_rate", legend_orientation='h', legend_valign="bottom",legend_title_text="Legenda", legend_title_side="top", legend = {"yanchor": "bottom", "y": -0.5})
-        
-        figures = dcc.Graph(figure=fig_scatter)
         
     elif selected_value == 'causas':
         fig_bar = px.bar(
